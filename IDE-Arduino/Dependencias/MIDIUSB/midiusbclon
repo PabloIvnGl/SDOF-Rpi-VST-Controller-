@@ -1,0 +1,6 @@
+git submodule add https://github.com/arduino-libraries/MIDIUSB SDOF-Rpi-VST-Controller-/IDE-Arduino/Dependencias/MIDIUSB
+
+git add .gitmodules
+git add SDOF-Rpi-VST-Controller-/IDE-Arduino/Dependencias/MIDIUSB
+git commit -m "Add MIDIUSB as submodule"
+git push
