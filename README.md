@@ -1,6 +1,15 @@
 # SDOF-Rpi-VST-Controller-
-MIDI class compliant controller VST host based on RaspberryPi 5 SBC  
+MIDI class compliant controller VST host based on RaspberryPi 5 SBC.  
 
+
+Este repositorio contiene todos los archivos correspondientes al proyecto "SDOF DELAY CONTROL"  
+Este consiste en un procesador digital de efectos de audio pensado para trabajar junto con una
+interface de audio.  
+El procesador esta basado en una computadora de una sola placa modelo RasapberryPi 5 de 8Gb de memoria
+y un cpu arm de 2.4ghz, para procesos digitales, un microcontrolador sparkfun promicro permite su control
+y consolida una superficie MIDI class compliant USB incorpora además una pantalla táctil para su interacción
+con el sistema operativo Linux. En un futuro el poyecto pretende compilar una distribución propia de Linux para ejecutar
+unicamente una estacion digital de audio. Actualmente se utiliza la distribución "Debian" y el daw "Waveform traktion"  
 
 
 
