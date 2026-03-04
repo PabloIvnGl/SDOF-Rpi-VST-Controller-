@@ -93,7 +93,7 @@ void loop() {
   // ---- BOTÓN DE CAMBIO DE PÁGINA MIDI ----
   int midibotState = digitalRead(midipageBotPIN);
 
-  if (midibotState == LOW && !midibuttonPreviousState) { // Detecta flanco de bajada (botón recién presionado)
+  if (midibotState == LOW && !midibuttonPreviousState) { // Detecta (botón recién presionado)
     midibuttonPressed = true;
   } else {
     midibuttonPressed = false;
@@ -112,7 +112,7 @@ void loop() {
   // ---- ENVÍO DE NOTAS MIDI POR BOTONES ----
   for(int i = 0; i < (N_BOT); i++) {
 
-    if (botState[i] == LOW && !swPreviousState[i]) {  // Detecta flanco de bajada (botón recién presionado)
+    if (botState[i] == LOW && !swPreviousState[i]) {  // Detecta (botón recién presionado)
       swPressed[i] = true;
     } else {
       swPressed[i] = false;
@@ -158,7 +158,7 @@ void loop() {
       if (midiState[i] != midiPState[i]) {
         
         controlChange(POT_CH, potCC[i], midiState[i]);  // Envía el mensaje MIDI Control Change (canal, CC, valor)
-        MidiUSB.flush();                                 // Vacía el buffer de salida MIDI
+        MidiUSB.flush();                                 //  salida MIDI
 
         // Imprime en el monitor serie para depuración
         Serial.print("Pot ");
